@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gargi.example.location.LocationActivity" >
+
+    <TextView
+        android:id="@+id/lat_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+    <TextView 
+        android:id="@+id/long_textview"
+        android:layout_below="@id/lat_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <Button 
+        android:id="@+id/location_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch Location"
+        android:layout_below="@id/long_textview"/>
+    <Button
+        android:id="@+id/location_stop_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Location update"
+        android:layout_below="@id/location_btn"/>
+
+</RelativeLayout>
